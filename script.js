@@ -1,28 +1,9 @@
-let tableWidth = 800;
-let tableHeight = 600;
-
-let smTabitaX = 400;
-let smTabitaY = 300;
-
-let directionX = 1;
-
-
 function setup(){
- createCanvas(tableWidth,tableHeight);
-
+ createCanvas(800,600);
 }
 function draw(){
     background ("blue");
-checkLimitsSMTabita();
-
-smilyFaceTabita(smTabitaX ,smTabitaY);
-}
-
-function checkLimitsSMTabita(){
-    if(smTabitaX >= tableWidth) 
-      directionX *= -1;
-    
-    smTabitaX += directionX;  
+smilyFaceTabita(400,300);
 }
 function smilyFaceTabita(x,y){
      //Body
@@ -31,23 +12,24 @@ function smilyFaceTabita(x,y){
     stroke("black");
     circle(x,y,50);
     //EYSE
-    stroke("green");
+    fill("black")
+    stroke("black");
     ellipse(x-10,y-10,10,5);
     ellipse(x+10,y-10,10,5);
     //Eye pupils
-    stroke("black");
-    fill("black");
+    stroke("light green");
+    fill("lightgreen");
     circle(x-10,y-10,4);
     circle(x+10,y-10,4);
 
     //Mounth
+    fill("black")
     stroke("red");
-    fill("white");
     arc(x, y+10, 17, 10 ,0,Math.PI);
 
     //Cheeks
-    stroke("pink");
-    fill("pink");
+    stroke("red");
+    fill("red");
     circle(x+20,y+5,9);
     circle(x-20,y+5,9);
 }
@@ -102,3 +84,6 @@ function setup(){
        circle(x+20,y+5,9);
        circle(x-20,y+5,9);
    }
+
+
+
