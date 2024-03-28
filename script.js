@@ -1,9 +1,28 @@
+let tableWidth = 800;
+let tableHeight = 600;
+
+let smTabitaX = 400;
+let smTabitaY = 300;
+
+let directionX = 1;
+
+
 function setup(){
- createCanvas(900,600);
+ createCanvas(tableWidth,tableHeight);
+
 }
 function draw(){
     background ("blue");
-smilyFaceTabita(400,300);
+checkLimitsSMTabita();
+
+smilyFaceTabita(smTabitaX ,smTabitaY);
+}
+
+function checkLimitsSMTabita(){
+    if(smTabitaX >= tableWidth) 
+      directionX *= -1;
+    
+    smTabitaX += directionX;  
 }
 function smilyFaceTabita(x,y){
      //Body
