@@ -8,9 +8,14 @@ let smTabita = {
 
 
 function checkLimitsSMTabita() {
-    if (smTabita.x >= tabWith || smTabita.x <= 0) smTabita.directionX *= -1;
+    if (smTabita.x >= tabWith || smTabita.x <= 0) 
+    smTabita.directionX *= -1;
+
     smTabita.x += smTabita.directionX * smTabita.speed;
-    if(smTabita.y >= tabWith || smTabita.y <= 0) smTabita.directionY *= -1;
+
+    if(smTabita.y >= tabWith || smTabita.y <= 0) 
+    smTabita.directionY *= -1;
+
     smTabita.x += smTabita.directionX * smTabita.speed;
   }
   function smilyFaceTabita(x, y) {
