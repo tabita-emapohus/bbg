@@ -1,15 +1,17 @@
 let smTabita = {
     x:400,
     y:100,
-    direction: 3
+    directionX: 3,
+    directionY: 3,
+    speed:20
 }
 
 
 function checkLimitsSMTabita() {
-    if (smTabita.x >= tabWith || smTabita.x <= 0)
-      smTabita.direction *= -1;
-  
-    smTabita.x += smTabita.direction;
+    if (smTabita.x >= tabWith || smTabita.x <= 0) smTabita.directionX *= -1;
+    smTabita.x += smTabita.directionX * smTabita.speed;
+    if(smTabita.y >= tabWith || smTabita.y <= 0) smTabita.directionY *= -1;
+    smTabita.x += smTabita.directionX * smTabita.speed;
   }
   function smilyFaceTabita(x, y) {
     //Body
