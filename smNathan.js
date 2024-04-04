@@ -1,18 +1,24 @@
-let directionNathanX = 4;
-let directionNathanY = 4;
-let smNathanX = 100;
-let smNathanY = 300;
+let smNathan={
+  x: 100,
+  y: 400,
+  directionX: 4,
+  directionY: 4
+}
+// let directionNathanX = 4;
+// let directionNathanY = 4;
+// let smNathanX = 100;
+// let smNathanY = 300;
 
 function checkLimitsSMNathan() {
-    if (smNathanX >= tabWith || smNathanX <= 0)
-      directionNathanX *= -1;
+    if (smNathan.x >= tabWith || smNathan.x <= 0)
+    smNathan.directionX *= -1;
   
-    smNathanX += directionNathanX;
+    smNathan.x += smNathan.directionX;
 
-    if (smNathanY >= tabHeight || smNathanY <= 0)
-    directionNathanY *= -1;
+    if (smNathan.y >= tabHeight || smNathan.y <= 0)
+    smNathan.directionY *= -1;
 
-    smNathanY += directionNathanY;
+    smNathan.y += smNathan.directionY;
 }
 
 function smilyFaceNathan(x, y) {
@@ -36,10 +42,4 @@ function smilyFaceNathan(x, y) {
     fill("black")
     stroke("red");
     arc(x, y + 10, 17, 10, 0, Math.PI);
-  
-    //Cheeks
-    stroke("red");
-    fill("red");
-    circle(x + 20, y + 5, 9);
-    circle(x - 20, y + 5, 9);
   }
