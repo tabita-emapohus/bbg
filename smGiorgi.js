@@ -1,14 +1,19 @@
 let smGiorgi = {
   x: 200,
   y: 300,
-  direction: 3
+  directionX: 3,
+  directionY: 3,
+  speed: 30
 }
 
 function checkLimitsSMGiorgi() {
-    if (smGiorgi.x >= tabWith || smGiorgi.x <= 0)
-      smGiorgi.direction *= -1;
-  
-    smGiorgi.x += smGiorgi.direction;
+    if (smGiorgi.x >= tabWith || smGiorgi.x <= 0) smGiorgi.directionX *= -1;
+
+    smGiorgi.x += smGiorgi.directionX * smGiorgi.speed;
+
+    if (smGiorgi.y >= tabWith || smGiorgi.y <= 0) smGiorgi.directionY *= -1;
+
+    smGiorgi.x += smGiorgi.directionX * smGiorgi.speed;
   }
   function smilyFaceGiorgi(x, y) {
     //Body
