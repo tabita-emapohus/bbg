@@ -1,8 +1,9 @@
 let smNathan={
   x: 100,
   y: 400,
-  directionX: 4,
-  directionY: 4
+  directionX: 1,
+  directionY: 1,
+  speed: 10
 }
 // let directionNathanX = 4;
 // let directionNathanY = 4;
@@ -13,12 +14,12 @@ function checkLimitsSMNathan() {
     if (smNathan.x >= tabWith || smNathan.x <= 0)
     smNathan.directionX *= -1;
   
-    smNathan.x += smNathan.directionX;
+    smNathan.x += smNathan.directionX*smNathan.speed;
 
     if (smNathan.y >= tabHeight || smNathan.y <= 0)
     smNathan.directionY *= -1;
 
-    smNathan.y += smNathan.directionY;
+    smNathan.y += smNathan.directionY*smNathan.speed;
 }
 
 function smilyFaceNathan(x, y) {
