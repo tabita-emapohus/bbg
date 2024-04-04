@@ -3,7 +3,8 @@ let smNathan={
   y: 400,
   directionX: 1,
   directionY: 1,
-  speed: 10
+  speed: 0,
+  ray: 100
 }
 // let directionNathanX = 4;
 // let directionNathanY = 4;
@@ -27,20 +28,15 @@ function smilyFaceNathan(x, y) {
     // fill("white");
     fill("red");
     stroke("black");
-    circle(x, y, 50);
-    //EYSE
-    fill("black")
-    stroke("black");
-    ellipse(x - 10, y - 10, 10, 5);
-    ellipse(x + 10, y - 10, 10, 5);
-    //Eye pupils
-    stroke("light green");
+    circle(x, y, smNathan.ray);
+    
+    //eyes
     fill("lightgreen");
-    circle(x - 10, y - 10, 4);
-    circle(x + 10, y - 10, 4);
-  
+    circle(x - smNathan.ray/5, y - smNathan.ray/5, smNathan.ray/10);
+    circle(x + smNathan.ray/5, y - smNathan.ray/5, smNathan.ray/10);
+
     //Mounth
     fill("black")
     stroke("red");
-    arc(x, y + 10, 17, 10, 0, Math.PI);
+    arc(x, y + smNathan.ray/5, smNathan.ray/3, smNathan.ray/3, 0, Math.PI);
   }
