@@ -14,6 +14,7 @@ function draw() {
   checkLimitsSMNathan();
 
   createPaddleTabita();
+  createPaddleGiorgi();
 
 }
 
