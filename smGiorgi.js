@@ -1,13 +1,14 @@
-let smGiorgiX = 200;
-let smGiorgiY = 300;
-
-let directionGiorgiX = 3;
+let smGiorgi = {
+  x: 200,
+  y: 300,
+  direction: 3
+}
 
 function checkLimitsSMGiorgi() {
-    if (smGiorgiX >= tabWith || smGiorgiX <= 0)
-      directionGiorgiX *= -1;
+    if (smGiorgi.x >= tabWith || smGiorgi.x <= 0)
+      smGiorgi.direction *= -1;
   
-    smGiorgiX += directionGiorgiX;
+    smGiorgi.x += smGiorgi.direction;
   }
   function smilyFaceGiorgi(x, y) {
     //Body

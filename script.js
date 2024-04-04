@@ -7,7 +7,7 @@ function setup() {
 function draw() {
   background("blue");
   smilyFaceTabita(smTabita.x, smTabita.y);
-  smilyFaceGiorgi(smGiorgiX, smGiorgiY);
+  smilyFaceGiorgi(smGiorgi.x, smGiorgi.y);
   smilyFaceNathan(smNathan.x, smNathan.y);
   checkLimitsSMTabita();
   checkLimitsSMGiorgi();
