@@ -4,16 +4,16 @@ let tabHeight = 600;
 let smTabitaX = 400;
 let smTabitaY = 100;
 
-let directionTabitaX = 1;
+let directionTabitaX = 3;
 let smGiorgiX = 200;
 let smGiorgiY = 300;
 
-let directionNathanX = 1;
-let directionNathanY = 1;
+let directionNathanX = 4;
+let directionNathanY = 4;
 let smNathanX = 100;
 let smNathanY = 300;
 
-let directionGiorgiX = 1;
+let directionGiorgiX = 3;
 function setup() {
   createCanvas(800, 600);
 }
@@ -29,7 +29,7 @@ function draw() {
 }
 
 function checkLimitsSMGiorgi() {
-  if (smGiorgiX >= tabWith)
+  if (smGiorgiX >= tabWith || smGiorgiX <= 0)
     directionGiorgiX *= -1;
 
   smGiorgiX += directionGiorgiX;
@@ -37,19 +37,19 @@ function checkLimitsSMGiorgi() {
 
 
 function checkLimitsSMTabita() {
-  if (smTabitaX >= tabWith)
+  if (smTabitaX >= tabWith || smTabitaX <= 0)
     directionTabitaX *= -1;
 
   smTabitaX += directionTabitaX;
 }
 
 function checkLimitsSMNathan() {
-    if (smNathanX >= tabWith)
+    if (smNathanX >= tabWith || smNathanX <= 0)
       directionNathanX *= -1;
   
     smNathanX += directionNathanX;
 
-    if (smNathanY >= tabHeight)
+    if (smNathanY >= tabHeight || smNathanY <= 0)
     directionNathanY *= -1;
 
     smNathanY += directionNathanY;
