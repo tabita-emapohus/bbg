@@ -9,13 +9,13 @@ let smGiorgi = {
 }
 
 function checkLimitsSMGiorgi() {
-    if (smGiorgi.x >= tabWith - smGiorgi.ray || smGiorgi.x <= 0 + smGiorgi.ray) {
+    if (smGiorgi.x >= tabWidth - smGiorgi.ray || smGiorgi.x <= 0 + smGiorgi.ray) {
       smGiorgi.directionX *= -1;
     }
 
     smGiorgi.x += smGiorgi.directionX * smGiorgi.speedX;
 
-    if (smGiorgi.y >= tabWith - smGiorgi.ray || smGiorgi.y <= 0 + smGiorgi.ray) {
+    if (smGiorgi.y >= tabWidth - smGiorgi.ray || smGiorgi.y <= 0 + smGiorgi.ray) {
       smGiorgi.directionY *= -1;
     }
 

@@ -12,7 +12,7 @@ let smNathan={
 // let smNathanY = 300;
 
 function checkLimitsSMNathan() {
-    if (smNathan.x >= tabWith || smNathan.x <= 0)
+    if (smNathan.x >= tabWidth || smNathan.x <= 0)
     smNathan.directionX *= -1;
   
     smNathan.x += smNathan.directionX*smNathan.speed;
