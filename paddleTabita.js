@@ -1,6 +1,6 @@
 let pdTabita = {
     x : tabWidth/2,
-    y:580,
+    y:550,
     color: " #66ccffc",
     width: 70,
     height: 10
