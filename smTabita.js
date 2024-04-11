@@ -10,7 +10,7 @@ let smTabita = {
 
 
 function checkLimitsSMTabita() {
-    if (smTabita.x >= tabWith - smTabita.ray || smTabita.x <= 0 + smTabita.ray) {
+    if (smTabita.x >= tabWidth - smTabita.ray || smTabita.x <= 0 + smTabita.ray) {
     smTabita.directionX *= -1;
     }
 
