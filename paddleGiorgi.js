@@ -1,11 +1,12 @@
 let pdGiorgi = {
-    y: 200,
-    color: "#00ff00",
-    width: 70,
+    x: tabWidth/2,
+    y: 580,
+    color: "yellow",
+    width: 80,
     heigth: 10
 }
-
 function createPaddleGiorgi() {
    fill(pdGiorgi.color)
-   rect(mouseX, pdGiorgi.y, pdGiorgi.width, pdGiorgi.heigth)
+   pdGiorgi.x = mouseX-pdGiorgi.width/2;
+   rect(pdGiorgi.x, pdGiorgi.y, pdGiorgi.width, pdGiorgi.heigth)
 }
