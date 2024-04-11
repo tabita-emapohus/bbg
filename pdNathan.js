@@ -1,6 +1,6 @@
 let pdNathan = {
     x: 100,
-    y: 200,
+    y: 400,
     color: "red",
     width: 50,
     height: 25
@@ -8,5 +8,5 @@ let pdNathan = {
 
 function createPdNathan(){
     fill(pdNathan.color);
-    rect(pdNathan.x, pdNathan.y, pdNathan.width, pdNathan.height);
+    rect(mouseX, pdNathan.y, pdNathan.width, pdNathan.height);
 }
