@@ -1,12 +1,12 @@
 let pdTabita = {
-    y:200,
+    y:570,
     color: " #99ffcc",
-    with: 70,
+    width: 80,
     height: 10
 }
 function createPaddleTabita(){
     fill(pdTabita.color);
     stroke(pdTabita.color);
-    rect(mouseX,pdTabita.y,pdTabita.with,pdTabita.height);
+    rect(mouseX-pdTabita.with/2,pdTabita.with,pdTabita.height);
 
 }
