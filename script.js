@@ -11,7 +11,10 @@ function draw() {
   smilyFaceNathan(smNathan.x, smNathan.y);
   checkLimitsSMTabita();
   checkLimitsSMGiorgi();
-  checkLimitsSMNathan()
+  checkLimitsSMNathan();
+
+  createPaddleTabita();
+  createPaddleGiorgi();
 
   createPdNathan();
 }
