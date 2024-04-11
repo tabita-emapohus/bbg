@@ -16,7 +16,6 @@ function draw() {
 
 
   createPaddleGiorgi();
-  createPaddleTabita()
   createPdNathan();
 
   createBricks();
