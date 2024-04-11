@@ -1,14 +1,12 @@
 let smTabita = {
-    x: 200,
-    y: 300,
+    x: 400,
+    y: 350,
     ray: 25,
     directionX: 1,
     directionY: 1,
     speedX: 2,
     speedY: 2
 }
-
-
 function checkLimitsSMTabita() {
     if (smTabita.x >= tabWidth - smTabita.ray || smTabita.x <= 0 + smTabita.ray) {
         smTabita.directionX *= -1;
