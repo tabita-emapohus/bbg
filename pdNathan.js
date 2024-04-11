@@ -1,9 +1,9 @@
 let pdNathan = {
     x: 200,
-    y: 500,
+    y: 400,
     color: "red",
     width: 100,
-    height: 10
+    height: 50
 }
 
 function createPdNathan(){
