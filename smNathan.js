@@ -3,13 +3,9 @@ let smNathan={
   y: 400,
   directionX: 1,
   directionY: 1,
-  speed: 0,
-  ray: 100
+  speed: 5,
+  ray: 50
 }
-// let directionNathanX = 4;
-// let directionNathanY = 4;
-// let smNathanX = 100;
-// let smNathanY = 300;
 
 function checkLimitsSMNathan() {
     if (smNathan.x >= tabWidth || smNathan.x <= 0)
@@ -18,7 +14,15 @@ function checkLimitsSMNathan() {
     smNathan.x += smNathan.directionX*smNathan.speed;
 
     if (smNathan.y >= tabHeight || smNathan.y <= 0)
-    smNathan.directionY *= -1;
+      smNathan.directionY *= -1;
+//checking with the paddle
+    if (
+      // smNathan.y + smNathan.ray == pdNathan.y && 
+      smNathan.y + smNathan.ray/2 == pdNathan.y && 
+      smNathan.x >= pdNathan.x -pdNathan.width/2 && 
+      smNathan.x <= pdNathan.x + pdNathan.width
+      )
+      {smNathan.directionY *= -1;}
 
     smNathan.y += smNathan.directionY*smNathan.speed;
 }

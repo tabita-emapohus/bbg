@@ -13,8 +13,8 @@ function draw() {
   checkLimitsSMGiorgi();
   checkLimitsSMNathan();
 
-  createPaddleTabita();
+
   createPaddleGiorgi();
-  createPdNathan();
+ 
 }
 
