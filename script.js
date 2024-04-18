@@ -3,7 +3,7 @@ let tabHeight = 600;
 
 function setup() {
   createCanvas(tabWidth, tabHeight);
-  initBriks();
+  initBriksTabita();
 }
 function draw() {
   background("blue");
@@ -19,6 +19,6 @@ function draw() {
   createPaddleTabita()
   createPdNathan();
  
-  createBricks();
+  createBricksTabita();
 }
 
