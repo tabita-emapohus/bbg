@@ -20,5 +20,6 @@ function draw() {
   createPdNathan();
  
   createBricksTabita();
+  createBricksGiorgi();
 }
 
