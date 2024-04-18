@@ -9,27 +9,15 @@ let smGiorgi = {
 }
 
 function checkLimitsSMGiorgi() {
-<<<<<<< HEAD
     if (smGiorgi.x >= tabWidth - smGiorgi.ray || smGiorgi.x <= 0 + smGiorgi.ray) {
       smGiorgi.directionX *= -1;
     }
-=======
-  if (smGiorgi.x >= tabWidth - smGiorgi.ray || smGiorgi.x <= 0 + smGiorgi.ray) {
->>>>>>> 898ebb1f398453bfa32f7b29a29727c53d68f11a
 
-    smGiorgi.directionX *= -1;
-  }
   smGiorgi.x += smGiorgi.directionX * smGiorgi.speedX;
 
-<<<<<<< HEAD
-    if (smGiorgi.y >= tabWidth - smGiorgi.ray || smGiorgi.y <= 0 + smGiorgi.ray) {
-      smGiorgi.directionY *= -1;
-    }
-=======
   if(smGiorgi.y <= 0 + smGiorgi.ray){
     smGiorgi.directionY *= -1;
   }
->>>>>>> 898ebb1f398453bfa32f7b29a29727c53d68f11a
 
   //verificare paleta
   if (
@@ -45,6 +33,7 @@ function checkLimitsSMGiorgi() {
 
   smGiorgi.y += smGiorgi.directionY * smGiorgi.speedY
 }
+
 function smilyFaceGiorgi(x, y) {
   //Body
   // fill("white");
