@@ -12,7 +12,7 @@ function checkLimitsSMGiorgi() {
     if (smGiorgi.x >= tabWidth - smGiorgi.ray || smGiorgi.x <= 0 + smGiorgi.ray) {
       smGiorgi.directionX *= -1;
     }
-
+  
   smGiorgi.x += smGiorgi.directionX * smGiorgi.speedX;
 
   if(smGiorgi.y <= 0 + smGiorgi.ray){

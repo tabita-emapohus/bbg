@@ -3,6 +3,7 @@ let tabHeight = 600;
 
 function setup() {
   createCanvas(tabWidth, tabHeight);
+
   initBriksTabita();
 }
 function draw() {
@@ -14,9 +15,8 @@ function draw() {
   checkLimitsSMGiorgi();
   checkLimitsSMNathan();
 
-
+  createPaddleTabita();
   createPaddleGiorgi();
-  createPaddleTabita()
   createPdNathan();
  
   createBricksTabita();
