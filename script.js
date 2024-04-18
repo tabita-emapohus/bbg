@@ -18,7 +18,7 @@ function draw() {
   createPaddleGiorgi();
   createPdNathan();
 
-  createBricks();
+  createBricksGiorgi();
  
 }
 
